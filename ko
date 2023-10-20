@@ -1,0 +1,8 @@
+let images = ["frame1.png", "frame2.png", ...];
+let index = 0;
+let imgElement = document.getElementById("animation");
+
+setInterval(function() {
+  imgElement.src = images[index];
+  index = (index + 1) % images.length;
+}, 500);
